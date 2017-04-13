@@ -8,7 +8,7 @@ var canvas = document.getElementById('canvas'),
     dragTL = dragBL = dragTR = dragBR = false;
 var notDrawn = true;
 var imageObj = new Image();
-imageObj.src = "media/temp.jpg";
+imageObj.src = "images/22.jpg";
 
 
 function init() {
@@ -21,10 +21,18 @@ function init() {
         startY: 200,
     }
 }
-
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
+}
 function mouseDown(e) {
-    mouseX = e.pageX - this.offsetLeft;
-    mouseY = e.pageY - this.offsetTop;
+    //mouseX = e.pageX - this.offsetLeft;
+    //mouseY = e.pageY - this.offsetTop;
+    mouseX = getMousePos(canvas,e).x
+    mouseY = getMousePos(canvas,e).y
     notDrawn = false;
     // if there isn't a rect yet
     if (rect.w === undefined) {
@@ -62,7 +70,7 @@ function mouseDown(e) {
     }
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(imageObj,0,0);//redraw image
+    loadImage()//redraw image
     draw();
 
 }
@@ -79,8 +87,10 @@ function mouseMove(e) {
     if (notDrawn) {
         return;
     }
-    mouseX = e.pageX - this.offsetLeft;
-    mouseY = e.pageY - this.offsetTop;
+    //mouseX = e.clientX - this.offsetLeft;
+    //mouseY = e.clientY - this.offsetTop;
+    mouseX = getMousePos(canvas,e).x
+    mouseY = getMousePos(canvas,e).y
     if (dragTL) {
         rect.w += rect.startX - mouseX;
         rect.h += rect.startY - mouseY;
@@ -99,7 +109,7 @@ function mouseMove(e) {
         rect.h = Math.abs(rect.startY - mouseY);
     }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(imageObj,0,0);//redraw image
+    loadImage()//redraw image
     draw();
 }
 
@@ -124,8 +134,12 @@ function drawHandles() {
     drawCircle(rect.startX + rect.w, rect.startY + rect.h, closeEnough);
     drawCircle(rect.startX, rect.startY + rect.h, closeEnough);
 }
-
+function loadImage() {
+    ctx.drawImage(imageObj, 0, 0, imageObj.width,    imageObj.height,     // source rectangle
+        0, 0, canvas.width, canvas.height); // destination rectangle
+}
 init();
 imageObj.onload = function () {
-    ctx.drawImage(imageObj,0,0);
+    //ctx.drawImage(imageObj,0,0);
+    loadImage();
 }

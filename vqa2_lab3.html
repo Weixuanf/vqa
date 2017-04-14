@@ -30,8 +30,13 @@
         </div>
         <div class="row">
             <div class="col-md-6">
+                <p class="text-center">Please answer the following question about the image:</p>
+                <div id="questionBox">
+                    <p id="myquestion">What's this image about? </p>
+                    <input type="hidden" name="vqa_answer" id="myInput" onkeydown="keyDownHandler(event)" placeholder="Write your answer here">
+                </div>
                 <img id="myimage" src="" onload="imageLoaded()">
-                <canvas id="canvas" width="500" height="800"></canvas>
+                <canvas id="canvas" width="550" height="600"></canvas>
                 <script src="drawbox3.js"></script>
             </div>
             <div class="col-md-6">
@@ -64,15 +69,11 @@
                 </ul>
             </div>
         </div>
-        <p class="text-center">Please answer the following question about the image:</p>
         <div id="form_wrapper">
             <form id="mturk_form" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
                 <input type="hidden" id="assignmentId" name="assignmentId" value="">
                 <input type="hidden" id="vqa" name="vqa" value="">
-                <div id="questionBox">
-                    <p id="myquestion">HERE SHOULD LOAD THE QUES </p>
-                    <input type="text" name="vqa_answer" id="myInput" onkeydown="keyDownHandler(event)" placeholder="Write your answer here">
-                </div>
+
                 <p>Do you think you were able to answer the question correctly? <span class="redtext">*</span> </p>
                 <div id="radioGroup" class="btn-group btn-group-justified" data-toggle="buttons">
                     <label class="btn btn-default">
@@ -87,7 +88,7 @@
                 </div>
                 <br>
                 <!--NEXT/SUBMIT BUTTONS-->
-                <p class="text-center" style="font-weight: 700">Page <span id="pageNum">1</span> of <span id="totalPages">5</span></p>
+                <p class="text-center" style="display: none">Page <span id="pageNum">1</span> of <span id="totalPages">5</span></p>
                 <input type="button" id="nextBtn" value="next" class="btn btn-default">
                 <input id="submitButton" type="hidden" name="Submit" value="Submit" class="btn btn-default">
             </form>
@@ -96,6 +97,6 @@
     </div>
     <script src="amt_helper.js"></script>
     <script src="feature_extract.js"></script>
-    <script src="page_control.js"></script>
+    <script src="page_control2.js"></script>
 </body>
 </html>

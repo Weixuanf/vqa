@@ -8,7 +8,7 @@ var canvas = document.getElementById('canvas'),
     dragTL = dragBL = dragTR = dragBR = false;
 var notDrawn = true;
 var imageObj = new Image();
-imageObj.src = "images/22.jpg";
+imageObj.src = "images/3.jpeg";
 
 
 function init() {
@@ -84,6 +84,7 @@ function mouseUp() {
 }
 
 function mouseMove(e) {
+    canvas.style.cursor = "crosshair";
     if (notDrawn) {
         return;
     }

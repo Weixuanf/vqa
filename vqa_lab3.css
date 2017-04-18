@@ -3,9 +3,11 @@
 }
 #myquestion {
     font-weight: bold;
+    margin: 5px 5px;
 }
 #myInput {
     width: 100%;
+    line-height: 2em;
 }
 h3 {
     font-weight:600;
@@ -34,4 +36,33 @@ h3 {
 #submitButton {
     display: block;
     margin: 20px auto;
+}
+#redrawButton {
+    display: block;
+    margin-bottom: 10px;
+}
+.boldtext{
+    font-weight: bold;
+}
+#stepNav {
+    text-align: center;
+}
+.step-cell {
+    display: inline-block;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    padding: 12px;
+    margin-left: 20px;
+    width: 27%;
+}
+.active-nav {
+    background-color: #BF5700;
+    color: #FFF;
+}
+#hide-btn {
+    margin-right: 20px;
+}
+.inst-title {
+    font-weight: 600;
+    text-decoration: underline;
 }

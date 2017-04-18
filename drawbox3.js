@@ -6,19 +6,46 @@ var canvas = document.getElementById('canvas'),
     mouseY,
     closeEnough = 5,
     dragTL = dragBL = dragTR = dragBR = false;
-var notDrawn = true;
+var notDrawn = true;//if a box is drawn or not on the canvas
 var imageObj = new Image();
-imageObj.src = "images/3.jpeg";
+var colPadding = 80; //the default padding of a col-md element in bootstrap
+var imageName = decode(gup('img')),
+    question = decodeURI(gup('ques'));
+imageObj.src = "https://s3.amazonaws.com/aws-website-myvqa-olx0m/"+imageName;
 
-
+function redraw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    loadImage();
+    notDrawn = true;
+    rect.w = undefined;
+    rect.h = undefined;
+}
+function loadQuestion() {
+    document.getElementById("myquestion").innerHTML = question;
+}
 function init() {
     canvas.addEventListener('mousedown', mouseDown, false);
     canvas.addEventListener('mouseup', mouseUp, false);
     canvas.addEventListener('mousemove', mouseMove, false);
+    document.getElementById("redrawButton").addEventListener("click",redraw);
+
 
     rect = {
         startX: 100,
         startY: 200,
+    }
+    loadQuestion()
+    imageObj.onload = function () {
+        var leftBarWidth = document.getElementById("leftBar").clientWidth - colPadding;
+        if (imageObj.width>leftBarWidth) {
+            canvas.width = leftBarWidth;
+        }
+        else {
+            canvas.width = imageObj.width;//adjust the canvas size according to the image size
+        }
+        canvas.height = canvas.width * (imageObj.height / imageObj.width);
+        loadImage();
+
     }
 }
 function getMousePos(canvas, evt) {
@@ -140,7 +167,3 @@ function loadImage() {
         0, 0, canvas.width, canvas.height); // destination rectangle
 }
 init();
-imageObj.onload = function () {
-    //ctx.drawImage(imageObj,0,0);
-    loadImage();
-}

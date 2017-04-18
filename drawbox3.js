@@ -6,25 +6,60 @@ var canvas = document.getElementById('canvas'),
     mouseY,
     closeEnough = 5,
     dragTL = dragBL = dragTR = dragBR = false;
-var notDrawn = true;
+var notDrawn = true;//if a box is drawn or not on the canvas
 var imageObj = new Image();
-imageObj.src = "media/temp.jpg";
+var colPadding = 80; //the default padding of a col-md element in bootstrap
+var imageName = decode(gup('img')),
+    question = decodeURI(gup('ques'));
+imageObj.src = "https://s3.amazonaws.com/aws-website-myvqa-olx0m/"+imageName;
 
-
+function redraw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    loadImage();
+    notDrawn = true;
+    rect.w = undefined;
+    rect.h = undefined;
+}
+function loadQuestion() {
+    document.getElementById("myquestion").innerHTML = question;
+}
 function init() {
     canvas.addEventListener('mousedown', mouseDown, false);
     canvas.addEventListener('mouseup', mouseUp, false);
     canvas.addEventListener('mousemove', mouseMove, false);
+    document.getElementById("redrawButton").addEventListener("click",redraw);
+
 
     rect = {
         startX: 100,
         startY: 200,
     }
-}
+    loadQuestion()
+    imageObj.onload = function () {
+        var leftBarWidth = document.getElementById("leftBar").clientWidth - colPadding;
+        if (imageObj.width>leftBarWidth) {
+            canvas.width = leftBarWidth;
+        }
+        else {
+            canvas.width = imageObj.width;//adjust the canvas size according to the image size
+        }
+        canvas.height = canvas.width * (imageObj.height / imageObj.width);
+        loadImage();
 
+    }
+}
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
+}
 function mouseDown(e) {
-    mouseX = e.pageX - this.offsetLeft;
-    mouseY = e.pageY - this.offsetTop;
+    //mouseX = e.pageX - this.offsetLeft;
+    //mouseY = e.pageY - this.offsetTop;
+    mouseX = getMousePos(canvas,e).x
+    mouseY = getMousePos(canvas,e).y
     notDrawn = false;
     // if there isn't a rect yet
     if (rect.w === undefined) {
@@ -62,7 +97,7 @@ function mouseDown(e) {
     }
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(imageObj,0,0);//redraw image
+    loadImage()//redraw image
     draw();
 
 }
@@ -76,11 +111,14 @@ function mouseUp() {
 }
 
 function mouseMove(e) {
+    canvas.style.cursor = "crosshair";
     if (notDrawn) {
         return;
     }
-    mouseX = e.pageX - this.offsetLeft;
-    mouseY = e.pageY - this.offsetTop;
+    //mouseX = e.clientX - this.offsetLeft;
+    //mouseY = e.clientY - this.offsetTop;
+    mouseX = getMousePos(canvas,e).x
+    mouseY = getMousePos(canvas,e).y
     if (dragTL) {
         rect.w += rect.startX - mouseX;
         rect.h += rect.startY - mouseY;
@@ -99,7 +137,7 @@ function mouseMove(e) {
         rect.h = Math.abs(rect.startY - mouseY);
     }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(imageObj,0,0);//redraw image
+    loadImage()//redraw image
     draw();
 }
 
@@ -124,8 +162,8 @@ function drawHandles() {
     drawCircle(rect.startX + rect.w, rect.startY + rect.h, closeEnough);
     drawCircle(rect.startX, rect.startY + rect.h, closeEnough);
 }
-
-init();
-imageObj.onload = function () {
-    ctx.drawImage(imageObj,0,0);
+function loadImage() {
+    ctx.drawImage(imageObj, 0, 0, imageObj.width,    imageObj.height,     // source rectangle
+        0, 0, canvas.width, canvas.height); // destination rectangle
 }
+init();

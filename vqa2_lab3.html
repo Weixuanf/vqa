@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visual Question Answering Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="vqa_lab3.css">
+</head>
+
+
+<body onresize="resizeHandler()">
+    <div class="container">
+        <h3>Help Us Answer Questions About Images!</h3>
+        <p>Please answer the questions about the images <span class="bluetext">with brief answers</span>.
+            Your answers should be how most other people would answer the questions.
+            If the question doesn’t make sense,
+            please try your best to answer it and indicate via the buttons that you are unsure of your response. </p>
+        <p><span style="color:red; font-weight:600;">If you don’t follow the following instructions, your work will be rejected.</span></p>
+        <div style="display: none">
+            <p id="imageLoadTime"></p>
+            <p id="deleteCnt"></p>
+            <p>You've made edits for <span id="editCnt">0</span> times in total</p>
+            <p id="demo"></p>
+            <p id="submitTime"></p>
+            <p id="timeDiff"></p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-center">Please answer the following question about the image:</p>
+                <div id="questionBox">
+                    <p id="myquestion">What's this image about? </p>
+                    <input type="hidden" name="vqa_answer" id="myInput" onkeydown="keyDownHandler(event)" placeholder="Write your answer here">
+                </div>
+                <img id="myimage" src="" onload="imageLoaded()">
+                <canvas id="canvas" width="550" height="600"></canvas>
+                <script src="drawbox3.js"></script>
+            </div>
+            <div class="col-md-6">
+                <h style="font-weight:600; font-size:11pt">Your work <span style="color:red">will get rejected</span> if you do not follow the instructions below:</h>
+                <ul>
+                    <li>Answer the question based on what is going on in <span style="color:blue"> the scene depicted in the image</span>.</li>
+                    <li>Your answer should be <span style="color:blue">a brief phrase</span> (not a complete sentence).</li>
+                    <ul>
+                        <li><span style="color:red">"It is a kitchen."</span> -&gt; <span style="color:blue">"kitchen"</span></li>
+                    </ul>
+                    <li>For yes/no questions, please <span style="color:blue">just say yes/no</span>.</li>
+                    <ul>
+                        <li><span style="color:red">"You bet it is!"</span> -&gt; <span style="color:blue">"yes"</span></li>
+                    </ul>
+                    <li>For numerical answers, please use <span style="color:blue">digits</span>.</li>
+                    <ul>
+                        <li><span style="color:red">"Ten."</span> -&gt; <span style="color:blue">"10"</span></li>
+                    </ul>
+                    <li>If an image is too poor in quality to answer the question (i.e., all white, all black, or too blurry), please say <span style="color:blue">"Unsuitable Image"</span>.</li>
+                    <ul>
+                        <li><span style="color:red">Insufficient image quality</span> -&gt; <span style="color:blue">"Unsuitable Image"</span></li>
+                    </ul>
+                    <li>If the question cannot be answered from the image, please say <span style="color:blue">"Unanswerable"</span>.</li>
+                    <ul>
+                        <li><span style="color:red">Question unrelated to image</span> -&gt; <span style="color:blue">"Unanswerable"</span></li>
+                    </ul>
+                    <li>If you need to speculate (e.g., "What just happened?"), provide an answer <span style="color:blue">that most people would agree on</span>.</li>
+                    <li>If you don't know the answer (e.g., specific dog breed), provide <span style="color:blue">your best guess</span>.</li>
+                    <li>Respond matter-of-factly and <span style="color:red">avoid using conversational language or inserting your opinion</span>.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="form_wrapper">
+            <form id="mturk_form" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
+                <input type="hidden" id="assignmentId" name="assignmentId" value="">
+                <input type="hidden" id="vqa" name="vqa" value="">
+
+                <p>Do you think you were able to answer the question correctly? <span class="redtext">*</span> </p>
+                <div id="radioGroup" class="btn-group btn-group-justified" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" name="confidence" value="no" id="option1" autocomplete="off"> no
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="confidence" value="maybe" id="option2" autocomplete="off"> maybe
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="confidence" value="yes" id="option3" autocomplete="off"> yes
+                    </label>
+                </div>
+                <br>
+                <!--NEXT/SUBMIT BUTTONS-->
+                <p class="text-center" style="display: none">Page <span id="pageNum">1</span> of <span id="totalPages">5</span></p>
+                <input type="button" id="nextBtn" value="next" class="btn btn-default">
+                <input id="submitButton" type="hidden" name="Submit" value="Submit" class="btn btn-default">
+            </form>
+        </div>
+
+    </div>
+    <script src="amt_helper.js"></script>
+    <script src="feature_extract.js"></script>
+    <script src="page_control2.js"></script>
+</body>
+</html>

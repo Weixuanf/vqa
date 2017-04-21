@@ -8,10 +8,12 @@ var canvas = document.getElementById('canvas'),
     dragTL = dragBL = dragTR = dragBR = false;
 var notDrawn = true;//if a box is drawn or not on the canvas
 var imageObj = new Image();
-var colPadding = 80; //the default padding of a col-md element in bootstrap
+var colPadding = 0; //the default padding of a col-md element in bootstrap
 var imageName = decode(gup('img')),
     question = decodeURI(gup('ques'));
-imageObj.src = "https://s3.amazonaws.com/aws-website-myvqa-olx0m/"+imageName;
+//imageObj.src = "https://s3.amazonaws.com/aws-website-myvqa-olx0m/"+imageName;
+imageObj.src = "images/COCO_1.jpg";
+question = "What sport is this?";
 
 function redraw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -22,6 +24,18 @@ function redraw() {
 }
 function loadQuestion() {
     document.getElementById("myquestion").innerHTML = question;
+}
+function loadCanvas() {
+    //var drawbox = document.getElementById("draw-board");
+    var leftBarWidth = canvas.parentNode.clientWidth - colPadding;
+    if (imageObj.width>leftBarWidth) {
+        canvas.width = leftBarWidth;
+    }
+    else {
+        canvas.width = imageObj.width;//adjust the canvas size according to the image size
+    }
+    canvas.height = canvas.width * (imageObj.height / imageObj.width);
+    loadImage();
 }
 function init() {
     canvas.addEventListener('mousedown', mouseDown, false);
@@ -34,19 +48,9 @@ function init() {
         startX: 100,
         startY: 200,
     }
-    loadQuestion()
-    imageObj.onload = function () {
-        var leftBarWidth = document.getElementById("leftBar").clientWidth - colPadding;
-        if (imageObj.width>leftBarWidth) {
-            canvas.width = leftBarWidth;
-        }
-        else {
-            canvas.width = imageObj.width;//adjust the canvas size according to the image size
-        }
-        canvas.height = canvas.width * (imageObj.height / imageObj.width);
-        loadImage();
-
-    }
+    loadQuestion();
+    loadCanvas();
+    imageObj.onload = function(){loadCanvas()};
 }
 function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
@@ -142,7 +146,8 @@ function mouseMove(e) {
 }
 
 function draw() {
-    ctx.strokeStyle = "#0801D3";
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "#F0C132";
     ctx.strokeRect(rect.startX, rect.startY, rect.w, rect.h);
     drawHandles();
 }
@@ -166,4 +171,3 @@ function loadImage() {
     ctx.drawImage(imageObj, 0, 0, imageObj.width,    imageObj.height,     // source rectangle
         0, 0, canvas.width, canvas.height); // destination rectangle
 }
-init();

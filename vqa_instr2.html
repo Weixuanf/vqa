@@ -16,26 +16,17 @@
 <body onresize="resizeHandler()">
 <div class="container">
     <h3>Help Us Answer Questions About Images!</h3>
-    <div class="text-center">
-        <button id="hide-btn">Hide</button>
-        <button id="show-btn">Show</button>
-    </div>
+
     <h5 id="main_instructions" align="justify" style="display: block;">
 
         <div id="stepNav">
             <div id="step-cell-0" class="text-center step-cell active-nav">OVERVIEW<br><br></div>
-            <div id="step-cell-1" class="text-center step-cell">STEP1<br>Outline Evidences for the Question</div>
-            <div id="step-cell-2" class="text-center step-cell">STEP2<br>Answer the Question</div>
+            <div id="step-cell-1" class="text-center step-cell">STEP 1<br>Outline Evidence for the Question</div>
+            <div id="step-cell-2" class="text-center step-cell">STEP 2<br>Answer the Question</div>
         </div>
         <br>
-        <p id="main-instruction-1">Draw <span class="bluetext">ONLY ONE</span> bounding box that indicates where one should look at to answer the question about the image. It should be the minimum region that a person need to look at to answer the question about the image. </p>
-        <p id="main-instruction-2"style="display: none">Please answer the questions about the images <span style="color:blue"><b>with brief answers</b></span>.
-            Your answers should be how most other people would answer the questions. If the question doesn’t make sense, please try your best to answer it and indicate via the buttons that you are unsure of your response.</p>
-        <p><span style="color:red; font-weight:600;">If you don’t follow the following instructions, your work will be rejected.</span></p>
 
     </h5>
-    <br>
-
 
     <div style="display: none">
         <p id="imageLoadTime"></p>
@@ -46,53 +37,53 @@
         <p id="timeDiff"></p>
     </div>
     <div id="page-1">
+        <h4>Motivation:</h4>
         <p>You will be shown an image and a question asked by a person about that image. Your work on this task will help to build machines that automatically assist people to answer questions about images.</p>
         <h4>Instructions:</h4>
         This HIT involves two tasks related to answering a given question about a particular image.
         <ol>
-            <li>In step 1, you will draw a rectangle on the image that shows the evidence in the image where the answer can be found.</li>
-            <li>In step 2, you will give the answer to the question about the image.</li>
+            <li>In <b>step 1</b>, you will draw a rectangle on the image that shows the evidence in the image where the answer can be found.</li>
+            <li>In <b>step 2</b>, you will give the answer to the question about the image.</li>
         </ol>
+        <img src="images/example0.png" class="img-responsive">
 
     </div>
-    <div id="page-2">
+    <div id="page-2" style="display: none;">
         <h4>Instructions:</h4>
         <ol>
             <li>Look at the image and read the question about the image</li>
             <li>Determine what answer you would give to the question.</li>
             <li>Look at the image and draw the smallest rectangle that completely encloses the portion of the image you would need to show someone so that (s)he too could arrive at that answer to the question.</p></li>
         </ol>
+        <p id="main-instruction-1">Draw <span class="bluetext">ONLY ONE</span> bounding box that indicates where one should look at to answer the question about the image. It should be the minimum region that a person need to look at to answer the question about the image. </p>
+
         <h4>Examples:</h4>
         <img style="width: 60%" class="img-responsive" src="images/example1.png">
-        <button id="redrawButton" class="btn btn-primary"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-            Redraw
-        </button>
-        <canvas id="canvas" width="550" height="600"></canvas>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div id="draw-board">
+                    <button id="redrawButton" class="btn btn-primary"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                        Redraw
+                    </button>
+                    <canvas id="canvas" width="550" height="600"></canvas>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+
     </div>
-    <div id="page-3" class="row">
+    <div id="page-3" class="row" style="display: none;">
+        <p>Please answer the questions about the images <span style="color:blue"><b>with brief answers</b></span>.
+            Your answers should be how most other people would answer the questions. If the question doesn’t make sense, please try your best to answer it and indicate via the buttons that you are unsure of your response.</p>
+        <p><span style="color:red; font-weight:600;">If you don’t follow the following instructions, your work will be rejected.</span></p>
         <div class="col-md-6" id="leftBar">
 
         </div>
         <div class="col-md-6">
-            <div id = "task1inst">
-                <h style="font-weight:600; font-size:11pt">Your work <span style="color:red">will get rejected</span> if you do not follow the instructions below:</h>
-                <p class="inst-title">WHAT TO DRAW</p>
-                <ul>
-                    <li>Please locate the visual evidences that justify your answer of the given image/question pair by drawing ONLY ONE bounding box. </li>
-                    <li>Identify the objects/regions that most prominently justify the answer. </li>
-                    <li>If there are multiple evidences/clues for the question, draw the minimum/smallest region/rectangle/box that includes/covers ALL of them. </li>
-                </ul>
-                <p class="inst-title">EXAMPLES</p>
-                <img class="img-responsive" src="images/example1.png">
-                <p class="inst-title">HOW TO DRAW</p>
-                <ul>
-                    <li> To draw a bounding box, click and drag on the image until you are done.</li>
-                    <li>To revise the bounding box you have drawn, click and drag the vertex of the bounding box.</li>
-                    <li>To clear your drawing and start over, click   Redraw   button</li>
-                </ul>
-            </div>
             <!-- task 2 instructions-->
-            <div id = "task2inst" style="display: none;">
+            <div id = "task2inst" >
                 <h style="font-weight:600; font-size:11pt">Your work <span style="color:red">will get rejected</span> if you do not follow the instructions below:</h>
                 <ul>
                     <li>Answer the question based on what is going on in <span class="boldtext"> the scene depicted in the image</span>.</li>
@@ -109,10 +100,6 @@
                     <ul>
                         <li><span style="color:red">"Ten."</span> -&gt; <span style="color:blue">"10"</span></li>
                     </ul>
-                    <li>If an image is too poor in quality to answer the question (i.e., all white, all black, or too blurry), please say <span style="color:blue">"Unsuitable Image"</span>.</li>
-                    <ul>
-                        <li><span style="color:red">Insufficient image quality</span> -&gt; <span style="color:blue">"Unsuitable Image"</span></li>
-                    </ul>
                     <li>If the question cannot be answered from the image, please say <span style="color:blue">"Unanswerable"</span>.</li>
                     <ul>
                         <li><span style="color:red">Question unrelated to image</span> -&gt; <span style="color:blue">"Unanswerable"</span></li>
@@ -125,11 +112,11 @@
             </div>
         </div>
     </div>
-    <div id="form_wrapper">
+    <div id="form_wrapper" >
         <form id="mturk_form" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
             <input type="hidden" id="assignmentId" name="assignmentId" value="">
             <input type="hidden" id="vqa" name="vqa" value="">
-            <div id="questionBox">
+            <div id="questionBox" style="display: none">
                 <p id="myquestion">What's this image about? </p>
                 <input type="hidden" name="vqa_answer" id="myInput" onkeydown="keyDownHandler(event)" placeholder="Write your answer here">
             </div>

@@ -14,6 +14,8 @@ var lastWindowWidth = window.innerWidth;
 var keyTypeStream = []; //key typestream
 var timeTypeStream = [];
 var averageTypeSpeed;
+
+
 document.getElementById("deleteCnt").innerHTML = "You've pressed delete/backspace for "+ deleteCnt + " times";
 //get the start input time
 function startInputHandler() {

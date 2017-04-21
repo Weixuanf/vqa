@@ -53,15 +53,20 @@
         <ol>
             <li>Look at the image and read the question about the image</li>
             <li>Determine what answer you would give to the question.</li>
-            <li>Look at the image and draw the smallest rectangle that completely encloses the portion of the image you would need to show someone so that (s)he too could arrive at that answer to the question.</p></li>
+            <li>Look at the image and draw one smallest rectangle that completely encloses the portion of the image you would need to show someone so that (s)he too could arrive at that answer to the question.</p></li>
         </ol>
-        <p id="main-instruction-1">Draw <span class="bluetext">ONLY ONE</span> bounding box that indicates where one should look at to answer the question about the image. It should be the minimum region that a person need to look at to answer the question about the image. </p>
-
-        <h4>Examples:</h4>
-        <img style="width: 60%" class="img-responsive" src="images/example1.png">
+        <p id="main-instruction-1"><b>Note: </b></p>
+        <ul>
+            <li>Draw <span class="bluetext">ONLY ONE</span> bounding box that covers all the evidences to answer the question.
+                It should be the minimum region that a person need to look at to answer the question about the image. </li>
+            <li>If the question is unanswerable according to the image, you still need to give your response. Use your best guess!</li>
+        </ul>
+        <h4>Example:</h4>
+        <img style="width: 90%;margin: 0px auto;" class="img-responsive" src="images/example1.png">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
+                <h4 style="margin-bottom: 15px">Task:</h4>
                 <div id="draw-board">
                     <button id="redrawButton" class="btn btn-primary"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
                         Redraw

@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3fe7b98-561e-4808-ac7b-e0a31584c171" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/example0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vqa_instr2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/example1.png" afterPath="$PROJECT_DIR$/images/example1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drawbox3.js" afterPath="$PROJECT_DIR$/drawbox3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature_extract.js" afterPath="$PROJECT_DIR$/feature_extract.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page_control2.js" afterPath="$PROJECT_DIR$/page_control2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vqa.html" afterPath="$PROJECT_DIR$/vqa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vqa_instr.html" afterPath="$PROJECT_DIR$/vqa_instr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vqa_lab3.css" afterPath="$PROJECT_DIR$/vqa_lab3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vqa_instr2.html" afterPath="$PROJECT_DIR$/vqa_instr2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,13 +24,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vqa_instr2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vqa_instr2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vqa_instr2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="93" lean-forward="false" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="93" />
+            <state relative-caret-position="-984">
+              <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -55,8 +53,18 @@
       <file leaf-file-name="drawbox3.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drawbox3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="252">
+              <caret line="77" column="54" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feature_extract.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature_extract.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,18 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/example1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_control2.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page_control2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_control2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="846">
+              <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding>
                 <element signature="e#0#36#0" expanded="false" />
               </folding>
@@ -127,10 +128,11 @@
         <option value="$PROJECT_DIR$/vqa2_lab3.html" />
         <option value="$PROJECT_DIR$/vqa.html" />
         <option value="$PROJECT_DIR$/vqa_instr.html" />
-        <option value="$PROJECT_DIR$/page_control2.js" />
-        <option value="$PROJECT_DIR$/drawbox3.js" />
         <option value="$PROJECT_DIR$/vqa_lab3.css" />
         <option value="$PROJECT_DIR$/vqa_instr2.html" />
+        <option value="$PROJECT_DIR$/feature_extract.js" />
+        <option value="$PROJECT_DIR$/drawbox3.js" />
+        <option value="$PROJECT_DIR$/page_control2.js" />
       </list>
     </option>
   </component>
@@ -278,18 +280,18 @@
       <updated>1492107191398</updated>
       <workItem from="1492107192669" duration="7121000" />
       <workItem from="1492275309407" duration="12928000" />
-      <workItem from="1492529758290" duration="18159000" />
+      <workItem from="1492529758290" duration="22570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38208000" />
+    <option name="totallyTimeSpent" value="42619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14166667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14166667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -470,24 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_control2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drawbox3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vqa_lab3.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -498,13 +482,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vqa_instr2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="93" lean-forward="false" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="93" />
+        <state relative-caret-position="-984">
+          <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_extract.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawbox3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="77" column="54" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_control2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#36#0" expanded="false" />
           </folding>
         </state>
       </provider>

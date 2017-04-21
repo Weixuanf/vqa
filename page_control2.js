@@ -4,6 +4,8 @@
 
 document.getElementById('nextBtn').addEventListener('click',renderNextPage);
 document.getElementById('submitButton').addEventListener('click',formSubmit);
+var goPage2Time;
+var goPage3Time;
 
 var pageNum = document.getElementById('pageNum');
 function getPageNum() {
@@ -11,7 +13,7 @@ function getPageNum() {
 }
 function renderNextPage() {
     var page = getPageNum();
-    if (page==1) {//currently at the 1st page
+    if (page==1) {//currently at the 1st page (overview)
         document.getElementById("page-1").style.display = "none";
         document.getElementById("page-2").style.display = "block";
         document.getElementById("questionBox").style.display = "block";
@@ -19,8 +21,11 @@ function renderNextPage() {
 
         document.getElementById("step-cell-1").classList.add("active-nav");//change the step nav active cell
         document.getElementById("step-cell-0").classList.remove("active-nav");//change the step nav active cell
+
+        goPage2Time = new Date();
+        console.log("goPage2Time: "+goPage2Time);
     }
-    if (page==2) {//currently at the 2nd page
+    if (page==2) {//currently at the 2nd page (draw bounding box)
         if (notDrawn) {
             alert("You must give your bounding box before you can go the the next page!");
             return;
@@ -40,6 +45,10 @@ function renderNextPage() {
         document.getElementById("step-cell-1").classList.remove("active-nav");//change the step nav active cell
 
         window.scrollTo(0, 0); //scoll to the top of the page
+
+        goPage3Time = new Date();
+        console.log("goPage3Time: "+goPage3Time);
+
     }
     pageNum.innerHTML = ++page;
 
@@ -56,8 +65,10 @@ function formSubmit() {
         image:imageName,
         question:question,
         answer:document.getElementById('myInput').value,
+        goPage2Time: goPage2Time,
+        startDrawTime: startDrawTime,
+        goPage3Time: goPage3Time,
         startInputTime: startInputTime,
-        imageLoadedTime: imageLoadedTime,
         submitTime:new Date(),//the time when hit the NEXT button (submit the result of current page)
         deleteCnt: deleteCnt,
         editCnt: editCnt,

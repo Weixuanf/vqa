@@ -12,8 +12,10 @@ var colPadding = 0; //the default padding of a col-md element in bootstrap
 var imageName = decode(gup('img')),
     question = decodeURI(gup('ques'));
 //imageObj.src = "https://s3.amazonaws.com/aws-website-myvqa-olx0m/"+imageName;
-imageObj.src = "images/COCO_1.jpg";
-question = "What sport is this?";
+imageObj.src = "images/COCO_2.jpg";
+question = "How many cows are there?";
+
+var startDrawTime;
 
 function redraw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -71,7 +73,10 @@ function mouseDown(e) {
         rect.startY = mouseY;
         dragBR = true;
     }
-
+    if(startDrawTime == undefined) {
+        startDrawTime = new Date();
+        console.log("startDrawTime: " + startDrawTime);
+    }
     // if there is, check which corner
     //   (if any) was clicked
     //

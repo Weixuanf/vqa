@@ -1,0 +1,121 @@
+,exact,entropy,oneDisagree,divCount,divAns
+abstract_v002_train2015_000000000032.png,0,0.3109175070825711,1,2,"{'2': 4, '1': 1}"
+abstract_v002_train2015_000000000425.png,0,1.0,0,5,"{'ice cream': 1, 'plate': 1, 'cupcake': 1, 'dessert': 1, 'pastry': 1}"
+abstract_v002_train2015_000000000512.png,1,0.0,1,1,{'blue': 5}
+abstract_v002_train2015_000000001203.png,1,0.0,1,1,{'baseball': 5}
+abstract_v002_train2015_000000001329.png,1,0.0,1,1,{'2': 5}
+abstract_v002_train2015_000000001527.png,0,0.5904362833084088,0,3,"{'tan': 1, 'brown': 3, 'grey': 1}"
+abstract_v002_train2015_000000001628.png,0,0.8277293767706427,0,4,"{'sitting': 2, 'having picnic': 1, 'picnicking': 1, 'laughing': 1}"
+abstract_v002_train2015_000000001756.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000002125.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000002446.png,0,0.41816566007905165,0,2,"{'yes': 3, 'no': 2}"
+abstract_v002_train2015_000000002469.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000002551.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000002675.png,1,0.0,1,1,{'1': 5}
+abstract_v002_train2015_000000002680.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000002693.png,1,0.0,1,1,{'2': 5}
+abstract_v002_train2015_000000002750.png,1,0.0,1,1,{'2': 5}
+abstract_v002_train2015_000000002851.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000002933.png,0,0.8277293767706427,0,4,"{'sandbox': 2, 'in sand box': 1, 'sand box': 1, 'in sandbox': 1}"
+abstract_v002_train2015_000000002984.png,0,0.3109175070825711,1,2,"{'no': 1, 'yes': 4}"
+abstract_v002_train2015_000000003288.png,0,0.3109175070825711,1,2,"{'yes': 4, 'no': 1}"
+abstract_v002_train2015_000000003293.png,0,0.3109175070825711,1,2,"{'no': 4, 'yes': 1}"
+abstract_v002_train2015_000000003371.png,0,0.5904362833084088,0,3,"{'beige': 3, 'brown': 1, 'tan': 1}"
+abstract_v002_train2015_000000003885.png,0,0.3109175070825711,1,2,"{'no': 1, 'yes': 4}"
+abstract_v002_train2015_000000003889.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000004035.png,0,0.41816566007905165,0,2,"{'yes': 3, 'no': 2}"
+abstract_v002_train2015_000000004107.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000004703.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000004777.png,0,0.3109175070825711,1,2,"{'robot can stand': 1, 'robot': 4}"
+abstract_v002_train2015_000000004904.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000004998.png,1,0.0,1,1,{'soccer ball': 5}
+abstract_v002_train2015_000000005029.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000005536.png,0,0.6554587535412856,0,3,"{'beige': 2, 'tan': 2, 'taupe': 1}"
+abstract_v002_train2015_000000005705.png,0,0.3109175070825711,1,2,"{'soccer ball': 4, 'ball': 1}"
+abstract_v002_train2015_000000006476.png,0,0.6554587535412856,0,3,"{'tan': 2, 'beige': 2, 'pink': 1}"
+abstract_v002_train2015_000000006524.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000006525.png,0,0.3109175070825711,1,2,"{'slide': 4, 'ladder': 1}"
+abstract_v002_train2015_000000006594.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000006686.png,0,0.3109175070825711,1,2,"{'scooter': 4, 'moped': 1}"
+abstract_v002_train2015_000000006711.png,0,0.3109175070825711,1,2,"{'ducks': 4, 'geese': 1}"
+abstract_v002_train2015_000000006713.png,0,0.6554587535412856,0,3,"{'no': 2, 'maybe': 2, 'yes': 1}"
+abstract_v002_train2015_000000006862.png,0,0.3109175070825711,1,2,"{'orange and red': 1, 'orange': 4}"
+abstract_v002_train2015_000000006880.png,0,1.0,0,5,"{'bread': 1, 'apple': 1, 'book': 1, 'cat wine bread apple book tablecloth': 1, 'food': 1}"
+abstract_v002_train2015_000000007151.png,0,0.3109175070825711,1,2,"{'no': 4, 'maybe': 1}"
+abstract_v002_train2015_000000007244.png,0,0.41816566007905165,0,2,"{'no': 3, 'yes': 2}"
+abstract_v002_train2015_000000007266.png,1,0.0,1,1,{'1': 5}
+abstract_v002_train2015_000000007354.png,0,0.6554587535412856,0,3,"{'no': 2, 'maybe': 2, 'yes': 1}"
+abstract_v002_train2015_000000007557.png,0,0.8277293767706427,0,4,"{'brown': 2, 'curtains are beige': 1, 'taupe': 1, 'grey': 1}"
+abstract_v002_train2015_000000008120.png,0,0.3109175070825711,1,2,"{'table': 4, 'coffee table': 1}"
+abstract_v002_train2015_000000008443.png,1,0.0,1,1,{'4': 5}
+abstract_v002_train2015_000000008655.png,0,0.3109175070825711,1,2,"{'picnic basket': 4, 'basket': 1}"
+abstract_v002_train2015_000000008788.png,0,0.3109175070825711,1,2,"{'yes': 4, 'no': 1}"
+abstract_v002_train2015_000000008983.png,0,1.0,0,5,"{'teenager': 1, 'short': 1, 'man': 1, 'unanswerable': 1, 'boy': 1}"
+abstract_v002_train2015_000000009252.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000009267.png,1,0.0,1,1,{'3': 5}
+abstract_v002_train2015_000000009486.png,0,0.3109175070825711,1,2,"{'yes': 4, 'steak': 1}"
+abstract_v002_train2015_000000009599.png,0,0.3109175070825711,1,2,"{'doll': 4, 'baby doll': 1}"
+abstract_v002_train2015_000000009823.png,1,0.0,1,1,{'1': 5}
+abstract_v002_train2015_000000009871.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000010020.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000010147.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000010204.png,0,1.0,0,5,"{'unanswerable': 1, 'steak corn': 1, 'steak': 1, 'fire': 1, 'meat': 1}"
+abstract_v002_train2015_000000010318.png,0,0.41816566007905165,0,2,"{'there are 2 plants': 2, '2': 3}"
+abstract_v002_train2015_000000010560.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000010592.png,1,0.0,1,1,{'red': 5}
+abstract_v002_train2015_000000010796.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000010846.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000011119.png,1,0.0,1,1,{'blue': 5}
+abstract_v002_train2015_000000011210.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000011215.png,1,0.0,1,1,{'red': 5}
+abstract_v002_train2015_000000011430.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000011779.png,0,0.3109175070825711,1,2,"{'man': 4, 'grandma': 1}"
+abstract_v002_train2015_000000012296.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000012598.png,1,0.0,1,1,{'tree': 5}
+abstract_v002_train2015_000000012754.png,0,0.41816566007905165,0,2,"{'yes': 3, 'no': 2}"
+abstract_v002_train2015_000000013045.png,0,0.8277293767706427,0,4,"{'it is lily pad': 1, 'lillypad': 1, 'frog': 1, 'lily pad': 2}"
+abstract_v002_train2015_000000013103.png,1,0.0,1,1,{'1': 5}
+abstract_v002_train2015_000000013164.png,1,0.0,1,1,{'no': 5}
+abstract_v002_train2015_000000013174.png,1,0.0,1,1,{'tree': 5}
+abstract_v002_train2015_000000013357.png,0,0.5904362833084088,0,3,"{'marshmallows': 3, '2': 1, 'marshmellows': 1}"
+abstract_v002_train2015_000000013527.png,0,0.3109175070825711,1,2,"{'no': 4, '0': 1}"
+abstract_v002_train2015_000000013681.png,0,0.8277293767706427,0,4,"{'2 feet': 2, 'quite close': 1, 'close': 1, 'very close': 1}"
+abstract_v002_train2015_000000013788.png,0,0.41816566007905165,0,2,"{'no': 3, 'yes': 2}"
+abstract_v002_train2015_000000013879.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000013957.png,0,0.5904362833084088,0,3,"{'unanswerable': 3, 'white': 1, 'unansweable': 1}"
+abstract_v002_train2015_000000014069.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000014197.png,1,0.0,1,1,{'log': 5}
+abstract_v002_train2015_000000014241.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000014251.png,0,0.3109175070825711,1,2,"{'yes': 4, 'no': 1}"
+abstract_v002_train2015_000000014318.png,0,0.8277293767706427,0,4,"{'sliding': 2, 'walking': 1, 'watching': 1, 'smiling': 1}"
+abstract_v002_train2015_000000014457.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000014489.png,0,0.3109175070825711,1,2,"{'red': 4, 'maroon': 1}"
+abstract_v002_train2015_000000014607.png,0,0.3109175070825711,1,2,"{'frisbee': 4, 'bikes': 1}"
+abstract_v002_train2015_000000014668.png,0,0.3109175070825711,1,2,"{'2': 4, '1': 1}"
+abstract_v002_train2015_000000014942.png,1,0.0,1,1,{'apples': 5}
+abstract_v002_train2015_000000014969.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000015104.png,0,0.8277293767706427,0,4,"{'it is dog': 1, 'cat': 1, 'dog': 2, 'that is dog': 1}"
+abstract_v002_train2015_000000015244.png,0,0.41816566007905165,0,2,"{'bee hive': 3, 'beehive': 2}"
+abstract_v002_train2015_000000015273.png,0,0.3109175070825711,1,2,"{'dog': 4, 'yes': 1}"
+abstract_v002_train2015_000000015521.png,0,0.41816566007905165,0,2,"{'1': 2, '0': 3}"
+abstract_v002_train2015_000000015616.png,0,0.3109175070825711,1,2,"{'there are 2 slices': 1, '2': 4}"
+abstract_v002_train2015_000000015704.png,0,0.3109175070825711,1,2,"{'purple': 4, 'beige and tan': 1}"
+abstract_v002_train2015_000000015959.png,1,0.0,1,1,{'black': 5}
+abstract_v002_train2015_000000016009.png,1,0.0,1,1,{'bone': 5}
+abstract_v002_train2015_000000016170.png,0,0.5904362833084088,0,3,"{'burgers': 1, 'hamburgers': 3, 'bbq': 1}"
+abstract_v002_train2015_000000016665.png,0,0.8277293767706427,0,4,"{'2': 2, '18 months': 1, 'toddler': 1, '8 months': 1}"
+abstract_v002_train2015_000000017224.png,0,0.3109175070825711,1,2,"{'waving': 4, 'greeting': 1}"
+abstract_v002_train2015_000000017346.png,0,0.3109175070825711,1,2,"{'1': 4, 'there is 1 chair': 1}"
+abstract_v002_train2015_000000017496.png,1,0.0,1,1,{'0': 5}
+abstract_v002_train2015_000000017882.png,1,0.0,1,1,{'plant': 5}
+abstract_v002_train2015_000000018243.png,1,0.0,1,1,{'2': 5}
+abstract_v002_train2015_000000018317.png,0,0.3109175070825711,1,2,"{'yes': 1, 'no': 4}"
+abstract_v002_train2015_000000018341.png,1,0.0,1,1,{'log': 5}
+abstract_v002_train2015_000000018656.png,0,0.5904362833084088,0,3,"{'12': 3, '6': 1, '13': 1}"
+abstract_v002_train2015_000000018802.png,0,1.0,0,5,"{'exercising': 1, 'hanging': 1, 'swinging on monkey bars': 1, 'hanging on monkey bars': 1, 'playing on monkey bars': 1}"
+abstract_v002_train2015_000000019242.png,1,0.0,1,1,{'red': 5}
+abstract_v002_train2015_000000019469.png,1,0.0,1,1,{'2': 5}
+abstract_v002_train2015_000000019513.png,0,0.3109175070825711,1,2,"{'baseball': 4, 'baseball and bat': 1}"
+abstract_v002_train2015_000000019812.png,1,0.0,1,1,{'yes': 5}
+abstract_v002_train2015_000000019949.png,0,1.0,0,5,"{'hole': 1, 'beehive': 1, 'knothole': 1, 'knot': 1, 'squirrel hole': 1}"
+abstract_v002_train2015_000000019960.png,1,0.0,1,1,{'2': 5}

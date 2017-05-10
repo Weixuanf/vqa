@@ -1,0 +1,121 @@
+,exact,entropy,oneDisagree,divCount,divAns
+COCO_train2014_000000016531.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000020742.jpg,0,0.3109175070825711,1,2,"{'wooden bench': 1, 'bench': 4}"
+COCO_train2014_000000023702.jpg,0,0.3109175070825711,1,2,"{'water aid humphrey camel': 1, 'water aid': 4}"
+COCO_train2014_000000024428.jpg,0,1.0,0,5,"{'for lunch': 1, 'to carry it': 1, 'no pockets': 1, 'save it': 1, 'unanswerable': 1}"
+COCO_train2014_000000029817.jpg,0,0.5904362833084088,0,3,"{'brown': 3, 'brown white and tan': 1, 'neutral earthtones': 1}"
+COCO_train2014_000000030023.jpg,1,0.0,1,1,{'2': 5}
+COCO_train2014_000000033828.jpg,1,0.0,1,1,{'pink': 5}
+COCO_train2014_000000046023.jpg,0,0.3109175070825711,1,2,"{'birthday': 1, 'yes': 4}"
+COCO_train2014_000000047074.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000051268.jpg,0,0.6554587535412856,0,3,"{'ham': 2, 'beef': 1, 'roast beef': 2}"
+COCO_train2014_000000057016.jpg,0,0.3109175070825711,1,2,"{'yes': 4, 'no': 1}"
+COCO_train2014_000000070985.jpg,0,1.0,0,5,"{'frisbee': 1, 'it is moving': 1, 'moving': 1, 'moving fast': 1, 'its moving': 1}"
+COCO_train2014_000000072947.jpg,0,1.0,0,5,"{'man in green and black shirt': 1, 'man on left': 1, 'man in green shirt': 1, 'man with green vest on': 1, 'guy in green': 1}"
+COCO_train2014_000000073302.jpg,1,0.0,1,1,{'green': 5}
+COCO_train2014_000000073461.jpg,1,0.0,1,1,{'crow': 5}
+COCO_train2014_000000078077.jpg,0,0.3109175070825711,1,2,"{'no': 4, 'yes': 1}"
+COCO_train2014_000000082759.jpg,0,0.8277293767706427,0,4,"{'it is tan': 1, 'tan': 2, 'khaki': 1, 'beige': 1}"
+COCO_train2014_000000090290.jpg,0,0.8277293767706427,0,4,"{'tiles': 1, 'clean': 2, 'it is tile': 1, 'unanswerable': 1}"
+COCO_train2014_000000093826.jpg,1,0.0,1,1,{'surfing': 5}
+COCO_train2014_000000103166.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000115005.jpg,0,1.0,0,5,"{'to perform more work': 1, 'different applications running': 1, 'unanswerable': 1, 'there are 3 monitors': 1, 'different tasks': 1}"
+COCO_train2014_000000139075.jpg,0,0.3109175070825711,1,2,"{'shrimp': 4, 'broccoli': 1}"
+COCO_train2014_000000141554.jpg,0,0.3109175070825711,1,2,"{'no': 4, 'yes': 1}"
+COCO_train2014_000000141922.jpg,0,0.5904362833084088,0,3,"{'no image is dicolored': 1, 'no': 3, 'unanswerable': 1}"
+COCO_train2014_000000148144.jpg,0,0.5904362833084088,0,3,"{'evening': 3, 'dusk or dawn': 1, 'daytime': 1}"
+COCO_train2014_000000175121.jpg,1,0.0,1,1,{'bus': 5}
+COCO_train2014_000000180641.jpg,0,0.8277293767706427,0,4,"{'muzzle': 2, 'muzzel': 1, 'mussle': 1, 'dog muter': 1}"
+COCO_train2014_000000183847.jpg,0,1.0,0,5,"{'because he is skiing': 1, 'sunlight': 1, 'sunny': 1, 'snow is bright': 1, 'keep sun out of eyes': 1}"
+COCO_train2014_000000190859.jpg,0,0.3109175070825711,1,2,"{'skateboard': 4, 'skaeboard': 1}"
+COCO_train2014_000000203098.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000207556.jpg,1,0.0,1,1,{'tennis racket': 5}
+COCO_train2014_000000208011.jpg,0,0.41816566007905165,0,2,"{'26': 2, '25': 3}"
+COCO_train2014_000000212863.jpg,0,0.8277293767706427,0,4,"{'ground': 1, 'on ground': 2, 'field': 1, 'on grass': 1}"
+COCO_train2014_000000213677.jpg,0,0.5904362833084088,0,3,"{'navy uniforms': 1, 'military': 3, 'cooks': 1}"
+COCO_train2014_000000214927.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000224079.jpg,0,0.3109175070825711,1,2,"{'5': 1, '3': 4}"
+COCO_train2014_000000225403.jpg,0,0.5904362833084088,0,3,"{'indian': 3, 'milddle eastern': 1, 'unanswerable': 1}"
+COCO_train2014_000000230863.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000233381.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000233647.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000234391.jpg,0,0.3109175070825711,1,2,"{'no': 1, 'yes': 4}"
+COCO_train2014_000000235905.jpg,0,0.3109175070825711,1,2,"{'no': 4, 'red and white': 1}"
+COCO_train2014_000000237162.jpg,0,0.5904362833084088,0,3,"{'black and white': 3, 'black white and gray': 1, 'black & white': 1}"
+COCO_train2014_000000238203.jpg,0,0.3109175070825711,1,2,"{'black white and gray': 1, 'black and white': 4}"
+COCO_train2014_000000243829.jpg,1,0.0,1,1,{'green': 5}
+COCO_train2014_000000251591.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000260393.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000262098.jpg,0,0.5904362833084088,0,3,"{'giraffes': 1, 'unanswerable': 1, 'no': 3}"
+COCO_train2014_000000262369.jpg,0,0.3109175070825711,1,2,"{'silver': 4, 'stainless steel': 1}"
+COCO_train2014_000000264567.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000271079.jpg,0,0.6554587535412856,0,3,"{'aluimum': 1, 'copper': 2, 'metal': 2}"
+COCO_train2014_000000272421.jpg,0,0.6554587535412856,0,3,"{'yes': 2, 'unanswerable': 1, 'no': 2}"
+COCO_train2014_000000275988.jpg,0,0.8277293767706427,0,4,"{'tan': 1, 'orange': 2, 'tan brown and white': 1, 'orange brown tan': 1}"
+COCO_train2014_000000279401.jpg,1,0.0,1,1,{'4': 5}
+COCO_train2014_000000300542.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000301191.jpg,0,0.5904362833084088,0,3,"{'9': 1, '8': 3, '7': 1}"
+COCO_train2014_000000308095.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000308653.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000321679.jpg,0,0.8277293767706427,0,4,"{'chevrolet': 2, 'chevy': 1, 'chevrolet and volkswagen': 1, 'dunno': 1}"
+COCO_train2014_000000321737.jpg,1,0.0,1,1,{'3': 5}
+COCO_train2014_000000331797.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000333040.jpg,1,0.0,1,1,{'wright': 5}
+COCO_train2014_000000334110.jpg,0,0.3109175070825711,1,2,"{'no': 4, 'yes': 1}"
+COCO_train2014_000000336634.jpg,0,0.41816566007905165,0,2,"{'2': 3, '1': 2}"
+COCO_train2014_000000338963.jpg,1,0.0,1,1,{'white': 5}
+COCO_train2014_000000348274.jpg,1,0.0,1,1,{'blue': 5}
+COCO_train2014_000000351004.jpg,0,0.8277293767706427,0,4,"{'dirt': 2, 'clay': 1, 'tennis': 1, 'tennis court': 1}"
+COCO_train2014_000000357108.jpg,0,0.3109175070825711,1,2,"{'blue': 4, 'green': 1}"
+COCO_train2014_000000358527.jpg,1,0.0,1,1,{'zebra': 5}
+COCO_train2014_000000361077.jpg,0,0.3109175070825711,1,2,"{'n': 1, 'no': 4}"
+COCO_train2014_000000371647.jpg,0,1.0,0,5,"{'light is off': 1, 'no light source': 1, 'night': 1, 'no light': 1, 'there is only 1 light': 1}"
+COCO_train2014_000000375665.jpg,0,0.3109175070825711,1,2,"{'red': 4, 'it is red': 1}"
+COCO_train2014_000000383580.jpg,1,0.0,1,1,{'stop': 5}
+COCO_train2014_000000396743.jpg,0,0.3109175070825711,1,2,"{'table': 4, 'wood table': 1}"
+COCO_train2014_000000404172.jpg,0,0.5904362833084088,0,3,"{'no': 3, 'maybe': 1, 'yes': 1}"
+COCO_train2014_000000404486.jpg,0,0.5904362833084088,0,3,"{'6': 3, '0': 1, 'at least half': 1}"
+COCO_train2014_000000409069.jpg,0,0.41816566007905165,0,2,"{'no': 3, 'yes': 2}"
+COCO_train2014_000000410531.jpg,1,0.0,1,1,{'gpx': 5}
+COCO_train2014_000000423964.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000424991.jpg,0,0.5904362833084088,0,3,"{'yellow white': 1, 'yellow and white': 3, 'yellow': 1}"
+COCO_train2014_000000428299.jpg,0,0.3109175070825711,1,2,"{'brocolli': 1, 'broccoli': 4}"
+COCO_train2014_000000429935.jpg,0,0.3109175070825711,1,2,"{'yes': 4, '2': 1}"
+COCO_train2014_000000439356.jpg,0,0.5904362833084088,0,3,"{'ludlow': 3, 'street sign ludlow street': 1, 'judlow': 1}"
+COCO_train2014_000000444350.jpg,1,0.0,1,1,{'blue': 5}
+COCO_train2014_000000449889.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000452819.jpg,0,0.3109175070825711,1,2,"{'yes': 4, 'no': 1}"
+COCO_train2014_000000453885.jpg,0,0.3109175070825711,1,2,"{'deer': 4, 'llama': 1}"
+COCO_train2014_000000461989.jpg,0,0.8277293767706427,0,4,"{'tan black white': 1, 'brown and white': 2, 'black brown and white': 1, 'brown white and black': 1}"
+COCO_train2014_000000466145.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000467063.jpg,0,0.3109175070825711,1,2,"{'cowboy hat': 1, 'hat': 4}"
+COCO_train2014_000000467929.jpg,0,0.8277293767706427,0,4,"{'helmet with horns': 2, 'helmet': 1, 'sunglesses and cap with horns': 1, 'horns': 1}"
+COCO_train2014_000000471905.jpg,0,0.3109175070825711,1,2,"{'right': 4, 'yes': 1}"
+COCO_train2014_000000479670.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000488962.jpg,0,0.3109175070825711,1,2,"{'banana': 4, 'bananna': 1}"
+COCO_train2014_000000491111.jpg,1,0.0,1,1,{'girls': 5}
+COCO_train2014_000000491400.jpg,1,0.0,1,1,{'bench': 5}
+COCO_train2014_000000492060.jpg,1,0.0,1,1,{'3': 5}
+COCO_train2014_000000495609.jpg,0,0.8277293767706427,0,4,"{'pacaderms': 1, 'unanswerable': 2, 'asian': 1, 'elephants': 1}"
+COCO_train2014_000000501867.jpg,0,0.41816566007905165,0,2,"{'unanswerable': 3, 'no': 2}"
+COCO_train2014_000000511446.jpg,0,0.41816566007905165,0,2,"{'black': 3, 'green': 2}"
+COCO_train2014_000000513124.jpg,0,0.5904362833084088,0,3,"{'red': 3, 'maroon': 1, 'burgundy': 1}"
+COCO_train2014_000000525691.jpg,0,0.5904362833084088,0,3,"{'zebras': 3, 'headless sheep': 1, 'pigs': 1}"
+COCO_train2014_000000530160.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000531960.jpg,1,0.0,1,1,{'no': 5}
+COCO_train2014_000000532128.jpg,0,1.0,0,5,"{'roue': 1, 'dinner': 1, 'soupe': 1, 'bay leaf': 1, 'et toufee': 1}"
+COCO_train2014_000000533957.jpg,1,0.0,1,1,{'pizza': 5}
+COCO_train2014_000000534511.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000535130.jpg,0,0.8277293767706427,0,4,"{'protect her identity': 1, 'hide her identity': 1, 'unanswerable': 2, 'hair': 1}"
+COCO_train2014_000000535804.jpg,0,0.41816566007905165,0,2,"{'cows': 3, 'cow': 2}"
+COCO_train2014_000000542165.jpg,0,0.3109175070825711,1,2,"{'no': 4, 'yes': 1}"
+COCO_train2014_000000543028.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000547419.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000548704.jpg,0,0.3109175070825711,1,2,"{'chocolate': 4, 'chocolate and marshmellows': 1}"
+COCO_train2014_000000555109.jpg,0,0.8277293767706427,0,4,"{'parked': 1, 'behind cyclist': 2, 'behind bicycle': 1, 'street': 1}"
+COCO_train2014_000000558006.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000564978.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000567121.jpg,1,0.0,1,1,{'white': 5}
+COCO_train2014_000000574776.jpg,1,0.0,1,1,{'yes': 5}
+COCO_train2014_000000577967.jpg,0,0.3109175070825711,1,2,"{'cat': 4, 'bobcat': 1}"
+COCO_train2014_000000579567.jpg,1,0.0,1,1,{'yes': 5}
